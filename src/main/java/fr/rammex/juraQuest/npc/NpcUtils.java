@@ -10,8 +10,6 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.EntityType;
 
-import java.util.List;
-
 public class NpcUtils {
 
     public static NPC createNpc(EntityType entityType, String name, String skinName, Location location) {

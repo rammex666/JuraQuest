@@ -1,17 +1,13 @@
 package fr.rammex.juraQuest;
 
 import fr.rammex.juraQuest.commands.CommandJuraQuest;
-import fr.rammex.juraQuest.npc.NpcManager;
 import fr.rammex.juraQuest.npc.trait.TraitOnClick;
 import fr.rammex.juraQuest.tasks.NpcLoader;
 import fr.rammex.juraQuest.tasks.NpcSpawner;
 import lombok.Getter;
 import net.citizensnpcs.api.CitizensAPI;
-import net.citizensnpcs.api.npc.NPC;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.List;
 
 public final class JuraQuest extends JavaPlugin {
 

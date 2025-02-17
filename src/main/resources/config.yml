@@ -1,1 +1,9 @@
+npc_stay: 300 # Time in seconds before the npc disappears
+
+npc_time_to_respawn: 600 # Time in seconds before chose an other NPC
+
+broadcast_on_spawn:
+  enabled: true
+  message: "&eUne quête est apparue !"
+
 npcs:
