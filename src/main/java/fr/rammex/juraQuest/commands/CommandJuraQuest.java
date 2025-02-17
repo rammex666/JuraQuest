@@ -19,7 +19,7 @@ public class CommandJuraQuest implements CommandExecutor {
         }
         Player player = (Player) sender;
 
-        if(args[0].equals("npc")){
+        if(args[0].equals("create")){
             String npcName = args[1];
             String skinName = args[2];
             Location location = player.getLocation();
@@ -36,6 +36,18 @@ public class CommandJuraQuest implements CommandExecutor {
         if(args[0].equals("reload")){
             JuraQuest.getInstance().reloadConfig();
             player.sendMessage("Config reloaded");
+        }
+
+        if(args[0].equals("delete")){
+            String npcName = args[1];
+            if(NpcUtils.isNpcExist(npcName)){
+                NpcManager.removeNpc(NpcManager.getNpcFromName(npcName));
+                NpcManager.getNpcFromName(npcName).despawn();
+                NpcManager.getNpcFromName(npcName).destroy();
+                player.sendMessage("NPC "+npcName+" deleted");
+            } else {
+                player.sendMessage("This NPC does not exist");
+            }
         }
 
         return false;

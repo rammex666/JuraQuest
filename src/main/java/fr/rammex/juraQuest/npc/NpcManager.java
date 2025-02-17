@@ -24,6 +24,15 @@ public class NpcManager {
         return npcList;
     }
 
+    public static NPC getNpcFromName(String name){
+        for(NPC npc : npcList){
+            if(npc.getName().equals(name)){
+                return npc;
+            }
+        }
+        return null;
+    }
+
     public static Location getLocation(NPC npc){
         return locationNpc.get(npc);
     }
