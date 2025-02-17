@@ -1,0 +1,8 @@
+name: JuraQuest
+version: '1.0'
+main: fr.rammex.juraQuest.JuraQuest
+api-version: '1.21'
+depend: [Citizens]
+commands:
+  juraquest:
+    permission: juraquest.command
